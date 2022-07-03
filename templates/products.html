@@ -1,0 +1,166 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Products
+{% endblock %}
+
+{% block main %}
+
+<form action="/products" method="post">
+    <section class="arrival" id="arrival">
+
+        <h1 class="heading"> <span>new arrivals</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="{{url_for('static',filename='Sonyimages.jpg')}}" alt="">
+                </div>
+                <div class="info">
+                    <h3>Sony Bravia</h3>
+                    <div class="subInfo">
+                        <strong class="price"> 30000 Tk/- <span>35000 Tk/-</span> </strong>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{{url_for('static',filename= 'ps5images.jpg')}}" alt="">
+                </div>
+                <div class="info">
+                    <h3>PS 5 gaming console</h3>
+                    <div class="subInfo">
+                        <strong class="price"> 60000 Tk/- <span> 75000 Tk/-</span> </strong>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{{url_for('static',filename='woodlanddownload.jpg')}}" alt="">
+                </div>
+                <div class="info">
+                    <h3>WOODLAND shoes</h3>
+                    <div class="subInfo">
+                        <strong class="price">5000/- <span>₹6000/-</span> </strong>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{{url_for('static',filename='143943-v1-oneplus-9t-mobile-phone-large-1 (1).jpg')}}"
+                        alt="">
+                </div>
+                <div class="info">
+                    <h3>ONE Plus 9t</h3>
+                    <div class="subInfo">
+                        <strong class="price"> 51000 Tk/- <span>55000 Tk/-</span> </strong>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{{url_for('static',filename='94dbc89bdc6cdcdf6482894f33d534679a700318_original.jpeg')}}"
+                        alt="">
+                </div>
+                <div class="info">
+                    <h3>Denim Jackets</h3>
+                    <div class="subInfo">
+                        <strong class="price"> 4000 Tk/- <span>5000 Tk/-</span> </strong>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{{url_for('static',filename='baseus.jpg')}}" alt="">
+                </div>
+                <div class="info">
+                    <h3>Baseus speakers</h3>
+                    <div class="subInfo">
+                        <strong class="price"> 5800 Tk/- <span>6000 Tk/-</span> </strong>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</form>
+{% endblock %}
